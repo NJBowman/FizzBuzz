@@ -23,6 +23,10 @@ namespace FizzBuzzConsole
                 {
                     Console.WriteLine("Fizz");
                 }
+                else if (number % 5 == 0)
+                {
+                    Console.WriteLine("Buzz");
+                }
 
                 Console.WriteLine(number);
                 number++;
