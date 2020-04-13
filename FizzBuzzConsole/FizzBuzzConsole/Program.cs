@@ -15,20 +15,20 @@ namespace FizzBuzzConsole
 
             while (number <= max)
             {
-                if (number % 3 == 0 && number % 5 == 0)
+                string output = "";
+
+                if (number % 3 == 0)
                 {
-                    Console.WriteLine("FizzBuzz");
+                    output = output + "Fizz";
                 }
-                else if (number % 3 == 0)
+                if (number % 5 == 0)
                 {
-                    Console.WriteLine("Fizz");
-                }
-                else if (number % 5 == 0)
-                {
-                    Console.WriteLine("Buzz");
+                    output = output + "Buzz";
                 }
 
-                Console.WriteLine(number);
+                var result = output.Length > 0 ? output : number.ToString();
+
+                Console.WriteLine(result);
                 number++;
             }
         }
